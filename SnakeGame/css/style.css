@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    background: url("../img/bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    font-family: "Rubik Scribble", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+#scoreBox {
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 40px;
+    font-family: "Ojuju", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#board {
+    background: linear-gradient(rgba(140, 241, 162, 0.863), rgba(210, 247, 208, 0.874));
+    width: 90vmin;
+    height: 92vmin;
+    border: 1.5px solid black;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+}
+
+.head {
+    background: linear-gradient(rgb(241, 40, 4), rgb(243, 132, 7));
+    border: 2px solid rgb(67, 7, 67);
+    border-radius: 9px;
+    transform: scale(1.02);
+}
+
+.snake {
+    background: linear-gradient(rgb(161, 25, 163), rgb(77, 4, 4));
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food {
+    background: linear-gradient(rgb(89, 221, 244), rgb(226, 221, 221));
+    border: .25vmin solid black;
+    border-radius: 8px;
+
+}
